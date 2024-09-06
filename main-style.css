@@ -16,7 +16,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to right, var(--color0) 50%, var(--color1) 50%);
-    min-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -259,7 +258,7 @@ footer {
     }
     #main-div-description h2{
         filter: drop-shadow(1px 10px 2px gray);
-        margin-left: 100px;
+        margin-left: 90px;
     }
     #main-div-description p{
         text-indent: 0;
