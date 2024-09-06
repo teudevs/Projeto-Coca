@@ -254,11 +254,10 @@ footer {
     }
     #main-div-description{
         margin-left: 0%;
-        margin-top: 550px;
+        margin-top: 465px;
     }
     #main-div-description h2{
         filter: drop-shadow(1px 10px 2px gray);
-        margin-left: 90px;
     }
     #main-div-description p{
         text-indent: 0;
