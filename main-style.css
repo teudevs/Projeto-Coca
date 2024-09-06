@@ -1,0 +1,321 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --color0: #0D0D0D;
+    --color1: #17171b;
+    --color2: #F2F2F2;
+    --color3: #BFA893;
+    --color4: #73614C;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, var(--color0) 50%, var(--color1) 50%);
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    position: relative;
+    z-index: 10;
+}
+
+#header-title-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+}
+
+#header-title {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    filter: drop-shadow(1px 1px 5px red);
+}
+
+#header-icon {
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+}
+#header-div-image-description {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#img-cola-png {
+    max-width: 600px;
+    max-height: 500px;
+    filter: saturate(0) blur(1px);
+}
+
+.personalization {
+    color: white;
+    margin: 13px 77px;
+}
+
+#main-div-description, 
+#main-div-description-two,
+#main-div-description-three { 
+    max-width: 560px;
+}
+
+#main-div-description p, 
+#main-div-description-two p, 
+#main-div-description-three p {
+    text-indent: 25px;
+    padding: 19px 0px;
+}
+
+
+#main-div-description-two {
+    float: right;
+    margin-top: -150px;
+}
+
+#main-div-description-three {
+    margin-top: 25px;
+}
+.titles {
+    font-size: 100px;
+}
+.info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+}
+.container-info {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-info {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 615px;
+}
+.card-info {
+    background-color: #151515;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 1000%;
+}
+.card-info p{
+    margin-bottom: 200px;
+    margin-top: 100px;
+    width: 90%;
+    color: white;
+    filter: drop-shadow(1px 1px 10px red);
+}
+.card-info h2{
+    color: white;
+}
+.img-cocavidro{
+    position: absolute;
+    margin-left: 530px;
+    margin-top: 90px;
+    filter: drop-shadow(1px 1px 10px red);
+}
+form{
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    margin-left: 420px;
+    font-size: 15px;
+    filter: drop-shadow(1px 1px 10px gray);
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 22pt;
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 25px;
+    color: gray;
+}
+
+form .input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+form .input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #808080;
+}
+
+form .input-single .input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    outline: 0;
+    font-size: 16px;
+    background: none;
+}
+
+form .input-single .input:focus{
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: red;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    color: #000000;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+form input[type=submit]:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.form-container{
+    padding-top: 100px;
+    padding-bottom: 6rem;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #adadad;
+    font-size: 1.3rem;
+    margin: -10px;
+}
+
+.footer-center {
+    font-size: 100%;
+}
+
+.footer-center a {
+    color: white;
+    text-decoration: none;
+}
+#main-div-description p, #main-div-description-two, #main-div-description-three{
+    visibility: hidden;
+}
+#main-div-description-container{
+    width: 100%;
+}
+#overlay-menu{
+    height: 0;
+}
+@media screen and (max-width: 700px) {
+    #img-cola-png {
+        width: 120%;
+        filter: saturate(0) blur(1px);
+        margin-left: -10%;
+    }
+    #main-div-description{
+        margin-left: 0%;
+        margin-top: 550px;
+    }
+    #main-div-description h2{
+        filter: drop-shadow(1px 10px 2px gray);
+        margin-left: 100px;
+    }
+    #main-div-description p{
+        text-indent: 0;
+        padding: 19px 0px;
+        width: 80%;
+        margin-left: 50px;
+        filter: drop-shadow(0px 0px 20px white);
+    }
+    #main-div-description-two{
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+    #main-div-description-two h2{
+        font-size: 450%;
+        filter: drop-shadow(1px 10px 2px gray);
+        margin-left: 100px;
+    }
+    #main-div-description-three h2{
+        font-size: 500%;
+        filter: drop-shadow(1px 10px 2px gray);
+        margin-left: 100px;
+    }
+    #main-div-description-three p, #main-div-description-two p{
+        text-indent: 0;
+        filter: drop-shadow(0px 0px 20px white);
+    }
+
+    .footer-center {
+        font-size: 85%;
+    }
+    .info{
+        display: contents;
+    }
+    .container-info{
+        width: 95%;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .img-cocavidro{
+        transform: rotate(45deg);
+        margin-left: 170px;
+        margin-top: -217px;
+        filter: blur(1.2px);
+        transition: 1s;
+    }
+    .img-cocavidro:hover{
+        filter: saturate(0) blur(1px);
+    }
+    .form-container{
+        padding-bottom: 13rem;
+    }
+    form{
+        margin-left: 0;
+        margin-top: 290px;
+    }
+    #main-div-description-container{
+        margin-top: 20px;
+
+    }
+}
